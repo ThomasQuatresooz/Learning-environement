@@ -4,37 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="./master.css" type="CSS" />
-    
+    <link rel="stylesheet" href="master.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <h1>En quoi consiste Markdown</h1>
     <p>
-      <b>Markdown</b> est un type de syntaxe permettant la modification du style
-      d'un texte sur le web. Grâce à l'utilisation de quelques caractères
-      non-alphabétiques (par exemple: ` # ` ou ` * `), il est possible de faire
-      apparaître le texte ciblé en <b>gras</b> ou en <i>italique</i>, d'ajouter
-      des images, ou encore de créer des listes parmi tant d'autres choses.
+      <b>Markdown</b> est un type de syntaxe permettant la modification du style d'un texte sur le
+      web. Grâce à l'utilisation de quelques caractères non-alphabétiques (par exemple: ` # ` ou ` *
+      `), il est possible de faire apparaître le texte ciblé en <b>gras</b> ou en <i>italique</i>,
+      d'ajouter des images, ou encore de créer des listes parmi tant d'autres choses.
     </p>
 
-    <p>
-      Sur <b>GitHub</b>, la syntaxe Markdown peut être utilisée à différents
-      endroits:
-    </p>
+    <p>Sur <b>GitHub</b>, la syntaxe Markdown peut être utilisée à différents endroits: </p>
 
     <ul>
       <li>les gists</li>
       <li>
-        les commentaires dans les discussions et les demandes d'extraction
-        (Pull/Requests)
+        les commentaires dans les discussions et les demandes d'extraction (Pull/Requests)
       </li>
       <li>
-        Les fichiers ayant <code>.md</code> ou <code>.markdown</code> comme
+        Les fichiers ayant <pre><code>.md</code></pre> ou <pre><code>.markdown</code></pre> comme
         extension
       </li>
     </ul>
-
     <h1>Guide de la syntaxe</h1>
     <p>
       Voici une vue d'ensemble de ce que la syntaxe Markdown permet de faire sur
@@ -47,44 +41,43 @@
     <h5>Ceci est toujours un titre</h5>
 
     <p>
-      Le symbole `#` permet de configurer la ligne de texte qui suit comme étant
-      un
-      <b>titre</b>. Il peut être utilisé <i>plusieurs fois</i> afin de créer un
-      sous-titre à chaque fois moins important.
+      Le symbole `#` permet de configurer la ligne de texte qui suit comme étant un
+      <b>titre</b>. Il peut être utilisé <i>plusieurs fois</i> afin de créer un sous-titre à chaque
+      fois moins important.
     </p>
 
-    <code>
-      # Ceci est un titre #### Ceci est également un titre ###### Ceci est
-      toujours un titre
-    </code>
+    <pre><code>
+        # Ceci est un titre <br>
+        #### Ceci est également un titre <br>
+        ###### Ceci est toujours un titre <br>
+      </code></pre>
 
     <h2>Emphase</h2>
     <i>Ce texte est en italique</i>
     <b>Ce texte est en gras</b>
     <i>Il est <b>possible</b> de les combiner</i>
     <p>
-      Pour accentuer un texte (en <i>italique</i> ou en <i>gras</i>, par
-      exemple), il suffit d'entourer la portion de texte souhaitée par les
-      symboles <code>`*`ou `_`(italique)</code>, ou
-      <code>`**`ou `__`(gras)</code>.
+      Pour accentuer un texte (en <i>italique</i> ou en <i>gras</i>, par exemple), il suffit
+      d'entourer la portion de texte souhaitée par les symboles
     </p>
+    <pre><code>`*`ou `_`(italique) && `**`ou `__`(gras)</code></pre>
 
-    <code>
-      *Ce texte sera en italique* _Ce texte sera également en italique_ **Ce
-      texte sera en gras** __Ce texte sera également en gras__ _Il est
-      **possible** de les combiner_
-    </code>
+    <pre><code>
+      *Ce texte sera en italique*<br>
+      _Ce texte sera également en italique_<br>
+      **Ce texte sera en gras**<br>
+      __Ce texte sera également en gras__<br>
+      _Il est **possible** de les combiner_<br>
+    </code></pre>
 
     <p>
-      <b>Attention</b> bien qu'il existe deux manières différentes d'accentuer
-      son texte, celles-ci ne sont pas interchangeables (**cette portion de
-      texte ne sera pas en gras__)!
+      <b>Attention</b> bien qu'il existe deux manières différentes d'accentuer son texte, celles-ci
+      ne sont pas interchangeables (**cette portion de texte ne sera pas en gras__)!
     </p>
     <h2>Listes</h2>
     <p>
-      Il y a deux types de listes: les <b>listes à puces</b> et les
-      <b>listes organisées</b>. Markdown requiert des symboles différents en
-      fonction de la liste utilisée.
+      Il y a deux types de listes: les <b>listes à puces</b> et les <b>listes organisées</b>.
+      Markdown requiert des symboles différents en fonction de la liste utilisée.
     </p>
 
     <h3>Listes à puces</h3>
@@ -102,14 +95,16 @@
     </ul>
 
     <p>
-      Le symbole `*` permet la création d'une liste à puce. A noter qu'il est
-      possible de les imbriquer.
+      Le symbole `*` permet la création d'une liste à puce. A noter qu'il est possible de les
+      imbriquer.
     </p>
-
-    <code>
-      * Une puce * Une autre puce * Une sous-puce * Une autre sous-puce * Et
-      encore une autre puce !
-    </code>
+    <pre><code>
+      * Une puce<br>
+      * Une autre puce<br>
+        * Une sous-puce<br>
+        * Une autre sous-puce<br>
+      * Et encore une autre puce !<br>
+      </code></pre>
 
     <h3>Listes organisées</h3>
 
@@ -123,24 +118,27 @@
       </li>
     </ol>
     <p>
-      Pour créer une liste organisée, il suffit de commencer les portions de
-      texte souhaitées par des numéros, suivis du symbole `.`.
+      Pour créer une liste organisée, il suffit de commencer les portions de texte souhaitées par
+      des numéros, suivis du symbole `.`.
     </p>
-    <code>
-      1. Une puce 1. Une autre puce 1. Et encore une autre puce !
-    </code>
+    <pre>
+      <code>
+      1. Une puce 
+      1. Une autre puce 
+      1. Et encore une autre puce !
+      </code>
+    </pre>
 
     <h2>Faire une citation</h2>
     <p>
-      Pour demarquer une citation il suffit d'ajouter un <code>></code> devant
-      votre citation.
+      Pour demarquer une citation il suffit d'ajouter un <code>></code> devant votre citation.
     </p>
-    <blockquote>Cela se présente de cette manière.</blockquote>
+    <blockquote cite="markdown">Cela se présente de cette manière.</blockquote>
 
     <h2>Mettre un lien</h2>
     <p>
-      Il suffit de mettre le mot sur lequel vous souhaitez faire votre lien
-      entre crochets [ ], puis votre lien entre parenthèses ( ).
+      Il suffit de mettre le mot sur lequel vous souhaitez faire votre lien entre crochets [ ], puis
+      votre lien entre parenthèses ( ).
     </p>
 
     <pre>
@@ -150,8 +148,7 @@
 
     <h2>Inline code</h2>
     <p>
-      Pour désigner un mot ou une phrase comme code, placez-le entre guillemets
-      (`).
+      Pour désigner un mot ou une phrase comme code, placez-le entre guillemets (`).
       <b>Cela se présente de cette manière :</b>
     </p>
 
@@ -168,43 +165,39 @@
     <ul>
       <li>
         <b>Localement</b> : <br />
-        Il suffit de preciser votre alt entre crochet et le lien entre
-        parenthèse.<br />
-        <code> ![image alt](cheminVersImage/nomImage.extention) </code><br />
+        Il suffit de preciser votre alt entre crochet et le lien entre parenthèse.<br />
+        <pre><code> ![image alt](cheminVersImage/nomImage.extention) </code></pre><br />
 
-        <img src="./Learning-environement/image_Markdown.jpg" />
+        <img src="image_Markdown.jpg" />
 
-        <blockquote>
-          Notez que si votre image ce trouve au même niveau que votre document,
-          il n'est pas nécessaire de préciser le chemin.
+        <blockquote cite="markdown">
+          Notez que si votre image ce trouve au même niveau que votre document, il n'est pas
+          nécessaire de préciser le chemin.
         </blockquote>
       </li>
       <li>
         <b>Via url</b>
-        De la même manière il suffit de preciser votre alt entre crochet et le
-        lien entre parenthèse. <br />
-        <code>
-          ![image
-          alt](https://lieuHebergementDeImage.com/ouSeTrouve/nomImage.extention) </code
-        ><br />
+        De la même manière il suffit de preciser votre alt entre crochet et le lien entre
+        parenthèse. <br />
+        <pre>
+          <code> ![image alt](https://lieuHebergementDeImage.com/ouSeTrouve/nomImage.extention) </code>
+        </pre>
 
         <img
           src="https://wanna-joke.com/wp-content/uploads/2014/09/funny-copy-paste-meme.jpg"
           title="copy_paste"
         />
 
-        <blockquote>
-          Notez que vous pouvez copier le lien via un simple click droit +
-          copier le lien de l'image.
+        <blockquote cite="markdown">
+          Notez que vous pouvez copier le lien via un simple click droit + copier le lien de
+          l'image.
         </blockquote>
       </li>
     </ul>
-    <a
-      href="https://github.com/faking-it/exercice-markdown/blob/master/document2.md"
+    <a href="https://github.com/faking-it/exercice-markdown/blob/master/document2.md"
       >Lire la suite</a
     >
-    <a
-      href="https://github.com/faking-it/exercice-markdown/blob/master/readme.md"
+    <a href="https://github.com/faking-it/exercice-markdown/blob/master/readme.md"
       >Retour vers le README</a
     >
   </body>
